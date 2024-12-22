@@ -9,6 +9,8 @@ local GetFramework = function()
         return 'qb'
     elseif GetResourceState('ox_core') ~= 'missing' then
         return 'ox'
+    else
+        return 'standalone'
     end
 end
 
